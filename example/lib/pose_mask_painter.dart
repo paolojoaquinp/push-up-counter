@@ -56,8 +56,10 @@ class PoseMaskPainter extends CustomPainter {
       canvas.drawCircle(offsetForPart(part), 5, pointPaint);
       if (part.type.isLeftSide) {
         canvas.drawCircle(offsetForPart(part), 3, leftPointPaint);
+        print('${part.type.toString().substring(16)}  | ${offsetForPart(part).dx.toString()} | ${offsetForPart(part).dy.toString()} |');
       } else if (part.type.isRightSide) {
         canvas.drawCircle(offsetForPart(part), 3, rightPointPaint);
+        print('${part.type.toString().substring(16)}  | ${offsetForPart(part).dx.toString()} | ${offsetForPart(part).dy.toString()} |');
       }
 
       // Landmark labels

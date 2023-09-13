@@ -4,14 +4,14 @@ PODS:
     - GoogleMLKit/PoseDetection (= 2.3.0)
     - GoogleMLKit/PoseDetectionAccurate (= 2.3.0)
     - GoogleMLKit/SegmentationSelfie (= 2.3.0)
-  - DKImagePickerController/Core (4.3.2):
+  - DKImagePickerController/Core (4.3.4):
     - DKImagePickerController/ImageDataManager
     - DKImagePickerController/Resource
-  - DKImagePickerController/ImageDataManager (4.3.2)
-  - DKImagePickerController/PhotoGallery (4.3.2):
+  - DKImagePickerController/ImageDataManager (4.3.4)
+  - DKImagePickerController/PhotoGallery (4.3.4):
     - DKImagePickerController/Core
     - DKPhotoGallery
-  - DKImagePickerController/Resource (4.3.2)
+  - DKImagePickerController/Resource (4.3.4)
   - DKPhotoGallery (0.0.17):
     - DKPhotoGallery/Core (= 0.0.17)
     - DKPhotoGallery/Model (= 0.0.17)
@@ -39,9 +39,9 @@ PODS:
     - DKImagePickerController/PhotoGallery
     - Flutter
   - Flutter (1.0.0)
-  - GoogleDataTransport (9.1.0):
-    - GoogleUtilities/Environment (~> 7.2)
-    - nanopb (~> 2.30908.0)
+  - GoogleDataTransport (9.2.5):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
   - GoogleMLKit/MLKitCore (2.3.0):
     - MLKitCommon (~> 3.1.0)
@@ -66,15 +66,15 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.3.2)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.2)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.3.2)"
-  - GoogleUtilities/Environment (7.5.2):
+  - GoogleUtilities/Environment (7.11.5):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.5.2):
+  - GoogleUtilities/Logger (7.11.5):
     - GoogleUtilities/Environment
-  - GoogleUtilities/UserDefaults (7.5.2):
+  - GoogleUtilities/UserDefaults (7.11.5):
     - GoogleUtilities/Logger
-  - GoogleUtilitiesComponents (1.0.0):
+  - GoogleUtilitiesComponents (1.1.0):
     - GoogleUtilities/Logger
-  - GTMSessionFetcher/Core (1.7.0)
+  - GTMSessionFetcher/Core (1.7.2)
   - MLImage (1.0.0-beta1)
   - MLKitCommon (3.1.0):
     - GoogleDataTransport (~> 9.0)
@@ -111,19 +111,19 @@ PODS:
   - MLKitXenoCommon (1.0.0-beta5):
     - MLKitCommon (~> 3.1)
     - MLKitVision (~> 1.3)
-  - nanopb (2.30908.0):
-    - nanopb/decode (= 2.30908.0)
-    - nanopb/encode (= 2.30908.0)
-  - nanopb/decode (2.30908.0)
-  - nanopb/encode (2.30908.0)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
   - "permission_handler (5.1.0+2)":
     - Flutter
-  - PromisesObjC (2.0.0)
-  - Protobuf (3.18.0)
-  - SDWebImage (5.12.1):
-    - SDWebImage/Core (= 5.12.1)
-  - SDWebImage/Core (5.12.1)
-  - SwiftyGif (5.4.0)
+  - PromisesObjC (2.3.1)
+  - Protobuf (3.24.3)
+  - SDWebImage (5.18.1):
+    - SDWebImage/Core (= 5.18.1)
+  - SDWebImage/Core (5.18.1)
+  - SwiftyGif (5.4.4)
 
 DEPENDENCIES:
   - body_detection (from `.symlinks/plugins/body_detection/ios`)
@@ -168,16 +168,16 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   body_detection: ec8d077166ec7c1b092d133553ff964eaff7a45e
-  DKImagePickerController: b5eb7f7a388e4643264105d648d01f727110fc3d
+  DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
   DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
   file_picker: 3e6c3790de664ccf9b882732d9db5eaf6b8d4eb1
-  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  GoogleDataTransport: 85fd18ff3019bb85d3f2c551d04c481dedf71fc9
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  GoogleDataTransport: 54dee9d48d14580407f8f5fbf2f496e92437a2f2
   GoogleMLKit: 53d5adbee0fe5a701e970f1387d2cfececd5bc50
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
-  GoogleUtilities: 8de2a97a17e15b6b98e38e8770e2d129a57c0040
-  GoogleUtilitiesComponents: a69c0b3b369ba443e988141e75ef49d9010b1c80
-  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
+  GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
+  GoogleUtilitiesComponents: 679b2c881db3b615a2777504623df6122dd20afe
+  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   MLImage: 647f3d580c10b3c9a3f6154f5d7baead60c42a0c
   MLKitCommon: 1b5c79d52f79d9cc93ab5300e9713c4c215121ea
   MLKitPoseDetection: d678a95ca0af6658f3539bf64b499e336fa99249
@@ -187,13 +187,13 @@ SPEC CHECKSUMS:
   MLKitSegmentationSelfie: 83537a445fcc3def829852a5b6724f42f328751d
   MLKitVision: 26da299aef93291f24f5200e8372919f73abf3b5
   MLKitXenoCommon: 34fc24339d4ad1a3b0b0973fae18987f60802984
-  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
-  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  Protobuf: 1a37ebea1338949e9ac35a3f06e80b3f536eec8d
-  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
-  SwiftyGif: 5d4af95df24caf1c570dbbcb32a3b8a0763bc6d7
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  Protobuf: 970f7ee93a3a08e3cf64859b8efd95ee32b4f87f
+  SDWebImage: ebdbcebc7933a45226d9313bd0118bc052ad458b
+  SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
 
-PODFILE CHECKSUM: dcb6e7ef31414af8f63963816fe98972d0a320aa
+PODFILE CHECKSUM: 4892c45fe95a016a3f493bd9222b0c5b2e12d359
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1
