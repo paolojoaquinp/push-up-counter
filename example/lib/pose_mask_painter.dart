@@ -6,6 +6,7 @@ import 'package:body_detection/models/pose_landmark.dart';
 import 'package:body_detection/models/pose_landmark_type.dart';
 
 class PoseMaskPainter extends CustomPainter {
+
   PoseMaskPainter({
     required this.pose,
     required this.mask,
@@ -50,16 +51,32 @@ class PoseMaskPainter extends CustomPainter {
       final point2 = offsetForPart(landmarksByType[connection[1]]!);
       canvas.drawLine(point1, point2, linePaint);
     }
+    Offset? p1;
+    Offset? p2;
+    Offset? p3;
 
     for (final part in pose!.landmarks) {
       // Landmark points
       canvas.drawCircle(offsetForPart(part), 5, pointPaint);
+      final type = part.type.toString().substring(17);
       if (part.type.isLeftSide) {
         canvas.drawCircle(offsetForPart(part), 3, leftPointPaint);
-        print('${part.type.toString().substring(16)}  | ${offsetForPart(part).dx.toString()} | ${offsetForPart(part).dy.toString()} |');
+        if(type == 'leftShoulder') {
+          p1 = offsetForPart(part);
+        } else if(type == 'leftElbow') {
+          p2 = offsetForPart(part);
+        } else if(type == 'leftWrist') {
+          p3 = offsetForPart(part);
+        }
+/*         print('${}  | ${offsetForPart(part).dx.toString()} | ${offsetForPart(part).dy.toString()} |'); */
+
+
       } else if (part.type.isRightSide) {
         canvas.drawCircle(offsetForPart(part), 3, rightPointPaint);
-        print('${part.type.toString().substring(16)}  | ${offsetForPart(part).dx.toString()} | ${offsetForPart(part).dy.toString()} |');
+        /* print('${part.type.toString().substring(17)}  | ${offsetForPart(part).dx.toString()} | ${offsetForPart(part).dy.toString()} |'); */
+        if(type == 'leftShoulder') {
+
+        }
       }
 
       // Landmark labels
@@ -82,6 +99,8 @@ class PoseMaskPainter extends CustomPainter {
       tp.layout();
       tp.paint(canvas, offsetForPart(part));
     }
+
+    /* print('Pendiente: ${utils.calcularPendiente(p1!, p2!).toStringAsFixed(2)}'); */
   }
 
   void _paintMask(Canvas canvas, Size size) {
