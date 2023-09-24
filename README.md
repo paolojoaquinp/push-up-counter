@@ -1,3 +1,21 @@
+# Push up Counter - App Based on the plugin(body_detection)
+
+- Setup the plugin(body_detection)
+```sh
+flutter pub get
+```
+- Setup on the app folder(./example)
+```sh
+flutter pub get
+```
+
+- Example:
+
+![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2R2YXc4bnVubWV1Y2RoZmlpeTkzemhseWVmeTEyeWswb3ZtbGVqdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jGzCRilEEx9lCsF6CT/giphy.gif)
+
+
+--------------------
+
 # body_detection
 
 A flutter plugin that uses MLKit on iOS/Android platforms to enable body pose and mask detection using Pose Detection and Selfie Segmentation APIs for both static images and live camera stream. When using live camera detection it runs both the camera image aquisition and detectors on the native side, which makes it faster than using the flutter camera plugin separately.
